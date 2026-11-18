@@ -6,9 +6,21 @@ WhatsApp re-encodes anything you send as **video**. Feed it 720p H.264
 `yuv420p` + AAC, then attach the file as **Document / File**. A “video”
 send of a 4K60 camera dump is how faces turn to soup.
 
-## Run
+## In the browser (no install)
 
-Needs `ffmpeg` on the machine (Linux, macOS, WSL, Termux).
+https://westlywire.com/
+
+Encode in the tab. Nothing uploads. Same recipe as this script.
+
+- [Compress video for WhatsApp](https://westlywire.com/tools/compress-whatsapp/)
+- [Compress to 16 MB / 8 MB](https://westlywire.com/tools/compress-video-to-size/)
+- [Send as document (Android + iPhone)](https://westlywire.com/tools/send-video-as-document-whatsapp/)
+- [Send a large video on WhatsApp](https://westlywire.com/tools/send-large-video-whatsapp/)
+
+## Run the script
+
+Needs `ffmpeg` on the machine (Linux, macOS, WSL, Termux). Use this when
+the clip is bigger than ~180 MB or the phone tab dies on WASM.
 
 ```bash
 chmod +x whatsapp-onepass.sh
